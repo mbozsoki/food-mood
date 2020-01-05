@@ -38,6 +38,10 @@ module.exports = (env = { mode: 'production' }, argv) => {
                     loader: 'source-map-loader',
                 },
                 {
+                    test: /\.css$/,
+                    use: ['style-loader', 'css-loader'],
+                },
+                {
                     test: /\.(jpg|eot|woff|woff2|svg|ttf|png|webp)$/,
                     use: [
                         {

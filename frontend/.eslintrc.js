@@ -17,10 +17,12 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['react', '@typescript-eslint/eslint-plugin'],
-    rules: {},
+    rules: {
+        'react/prop-types': [0, {}],
+    },
     settings: {
-        "react": {
-            "version": "detect"
-        }
-    }
+        react: {
+            version: 'detect',
+        },
+    },
 };
