@@ -3,6 +3,7 @@ import * as React from 'react';
 export const Footer: React.FunctionComponent = () => {
     return (
         <div className="footer">
+            <div className="author">Author: Mark Bozsoki</div>
             <div className="icon-credit">
                 Icons made by{' '}
                 <a

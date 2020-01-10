@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'app';
+@import 'food-list';
+@import 'food';
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: $color1;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: initial;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}

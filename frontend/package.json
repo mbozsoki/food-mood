@@ -4,10 +4,8 @@
     "description": "ReactJS project starter with TypeScript loader bundled with webpack. Prettier and ESLint configuration included.",
     "main": "index.js",
     "scripts": {
-        "watch": "npx webpack-dev-server --env.mode=development --open --host localhost",
-        "build": "npx webpack",
-        "devbuild": "npx webpack --env.mode=development",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "watch": "npx webpack --config webpack.config.js --env.mode=development",
+        "build": "npx webpack --config webpack.config.js"
     },
     "keywords": [
         "reactjs",
@@ -17,25 +15,36 @@
         "webpack-dev-server"
     ],
     "author": "Mark Bozsoki",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
+        "@babel/core": "^7.5.4",
+        "@babel/preset-env": "^7.5.4",
+        "@babel/preset-react": "^7.0.0",
         "@types/react": "^16.9.17",
         "@types/react-dom": "^16.9.4",
         "@typescript-eslint/eslint-plugin": "^2.14.0",
+        "babel-loader": "^8.0.6",
         "bootstrap": "^4.4.1",
+        "css-loader": "^3.0.0",
         "eslint": "^6.8.0",
         "eslint-plugin-react": "^7.17.0",
         "html-webpack-plugin": "^3.2.0",
+        "node-sass": "^4.12.0",
         "prettier": "^1.19.1",
+        "react-bootstrap": "^1.0.0-beta.16",
         "react-router-dom": "^5.1.2",
+        "sass-loader": "^7.1.0",
         "source-map-loader": "^0.2.4",
-        "ts-loader": "^6.2.1",
-        "typescript": "^3.7.4",
-        "webpack": "^4.41.5",
-        "webpack-cli": "^3.3.10",
-        "webpack-dev-server": "^3.10.1"
+        "style-loader": "^0.23.1",
+        "ts-loader": "^6.0.4",
+        "typescript": "^3.5.3",
+        "webpack": "^4.35.3",
+        "webpack-cli": "^3.3.6"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.26",
+        "@fortawesome/free-solid-svg-icons": "^5.12.0",
+        "@fortawesome/react-fontawesome": "^0.1.8",
         "@types/react-router-dom": "^5.1.3",
         "react": "^16.12.0",
         "react-dom": "^16.12.0"

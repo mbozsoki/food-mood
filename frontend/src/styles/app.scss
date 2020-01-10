@@ -1,0 +1,21 @@
+.nav-container {
+    //background-image: url('/assets/images/header.jpg');
+    background-position: center;
+    background: contain;
+
+    > .title {
+        font-size: 4em;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color5;
+    bottom: 0;
+}

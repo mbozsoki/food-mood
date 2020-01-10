@@ -9,9 +9,14 @@ export interface FoodProps {
 
 export const Food: React.FunctionComponent<FoodProps> = ({ food }) => {
     return (
-        <div className="food-item">
-            <img src={food.preview} />
-            <span className="title">{food.title}</span>
+        <div className="food card">
+            <img className="card-img-top" src={food.preview} />
+            <div className="card-body">
+                <h5 className="card-title">{food.title}</h5>
+                <a href="#" className="btn btn-primary">
+                    Show more
+                </a>
+            </div>
         </div>
     );
 };
